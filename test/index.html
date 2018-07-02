@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="Daniel Neubert">
+  <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+  <title>Testing Reform.js</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Testing for Reform.js</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2><b>Test 1:</b> Initialisation</h2>
+      <form>
+        <label>
+          <p>Sample</p>
+          <input type="text" name="name">
+        </label>
+        <input type="submit" value="Senden">
+      </form>
+    </section>
+
+    <section>
+      <h2><b>Test 2:</b> Grouped Behavior</h2>
+      <form>
+        <div class="rf-group rf-group-single">
+          <label class="rf-checkbox rf-req">
+            <input type="checkbox" value="sample-1" name="checkbox">
+            <p>Sample 1</p>
+          </label>
+          <label class="rf-checkbox rf-req">
+            <input type="checkbox" value="sample-2" name="checkbox">
+            <p>Sample 2</p>
+          </label>
+          <label class="rf-checkbox rf-req">
+            <input type="checkbox" value="sample-3" name="checkbox">
+            <p>Sample 3</p>
+          </label>
+        </div>
+        <input type="submit" value="Senden">
+      </form>
+    </section>
+
+    <section>
+      <h2><b>Test 3:</b> Select Placeholder</h2>
+      <form>
+        <label class="rf-select">
+          <p>Sample</p>
+          <select placeholder="Please select ..." name="select">
+            <option value="option-1">Option 1</optionv>
+            <option value="option-2">Option 2</option>
+            <option value="option-3">Option 3</option>
+          </select>
+        </label>
+        <input type="submit" value="Senden">
+      </form>
+    </section>
+
+    <section>
+      <h2><b>Test 4:</b> Validation</h2>
+      <form>
+        <label>
+          <p>Normal</p>
+          <input type="text" name="name">
+        </label>
+        <label class="rf-req">
+          <p>Required*</p>
+          <input type="text" name="required">
+        </label>
+        <label class="rf-req rf-val">
+          <p>E-Mail*</p>
+          <input type="email" name="email">
+        </label>
+        <label class="rf-req rf-val">
+          <p>Website*</p>
+          <input type="url" name="ulr">
+        </label>
+        <label class="rf-req rf-val" rf-val="phone">
+          <p>Phone*</p>
+          <input type="text" name="phone">
+        </label>
+        <input type="submit" value="Senden">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>This test is build for Reform.js by Daniel Neubert.</p>
+    <p>You can read more about Reform.js here: <a href="https://github.com/danielneubert/Reform.js">GitHub Repository</a></p>
+  </footer>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../dist/reform.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

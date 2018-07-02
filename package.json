@@ -1,0 +1,50 @@
+{
+  "name": "reform.js",
+  "version": "1.0.2",
+  "description": "Modern forms finally made easy.",
+  "main": "dist/reform.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielneubert/Reform.js.git"
+  },
+  "keywords": [
+    "form",
+    "reform",
+    "reform.js",
+    "async",
+    "asynchronous",
+    "formalize",
+    "json",
+    "jquery"
+  ],
+  "author": "Daniel Neubert <git@danielneubert.com>",
+  "license": "MPL 2.0",
+  "bugs": {
+    "url": "https://github.com/danielneubert/Reform.js/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "babel-minify": "^0.4.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-plugin-transform-es5-property-mutators": "^6.24.1"
+  },
+  "scripts": {
+    "test": "cypress open",
+    "build": "babel src -d dist && minify dist/reform.js --out-file dist/reform.min.js --mangle.keepClassName"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": []
+  },
+  "dependencies": {
+    "cypress": "^3.0.1",
+    "jquery": "^3.3.1",
+    "npm": "^6.1.0"
+  },
+  "homepage": "https://github.com/danielneubert/Reform.js#readme",
+  "directories": {
+    "test": "test"
+  }
+}
