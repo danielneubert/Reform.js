@@ -12,7 +12,7 @@
  * @author    Daniel Neubert <git@danielneubert.com>
  * @copyright 2018 Daniel Neubert
  * --------------------------------------------------------------------------------
- * @version   1.0.3
+ * @version   1.0.4
  * --------------------------------------------------------------------------------
  */
 
@@ -497,8 +497,6 @@
       };
 
       ajaxSetting = $.extend({}, _.options.ajax, ajaxSetting);
-
-      console.log(ajaxSetting);
 
       let resultSet = undefined;
       $.ajax(ajaxSetting).done(function(resultData) {

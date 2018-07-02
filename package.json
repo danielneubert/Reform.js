@@ -1,6 +1,6 @@
 {
   "name": "reform.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Modern forms finally made easy.",
   "main": "dist/reform.min.js",
   "repository": {
@@ -15,7 +15,8 @@
     "asynchronous",
     "formalize",
     "json",
-    "jquery"
+    "jquery",
+    "validation"
   ],
   "author": "Daniel Neubert <git@danielneubert.com>",
   "license": "MPL 2.0",
