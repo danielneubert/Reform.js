@@ -35,7 +35,7 @@ Reform.js is available as a classic download, via CDN and via NPM.
 
 ### CDN
 ```html
-<script src="https://cdn.jsdelivr.net/npm/reform.js@1.0.2/dist/reform.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reform.js@1/dist/reform.min.js"></script>
 ```
 
 ### NPM
