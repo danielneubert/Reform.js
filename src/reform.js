@@ -12,7 +12,7 @@
  * @author    Daniel Neubert <git@danielneubert.com>
  * @copyright 2018 Daniel Neubert
  * --------------------------------------------------------------------------------
- * @version   1.0.4
+ * @version   1.0.5
  * --------------------------------------------------------------------------------
  */
 
@@ -380,7 +380,7 @@
           if ($(this).hasClass('rf-req')) {
             switch (true) {
               case ($(this).hasClass('rf-checkbox') || $(this).hasClass('rf-radio')): {
-                if (!$('input', this).is('checked')) {
+                if (!$('input', this).is(':checked')) {
                   errorFound = true;
                   _.out('Checkbox or radio did not pass validation:');
                   _.out($(this));
