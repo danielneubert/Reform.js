@@ -18,7 +18,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @author    Daniel Neubert <git@danielneubert.com>
  * @copyright 2018 Daniel Neubert
  * --------------------------------------------------------------------------------
- * @version   1.0.7-c
+ * @version   1.0.8
  * --------------------------------------------------------------------------------
  */
 
