@@ -18,7 +18,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @author    Daniel Neubert <git@danielneubert.com>
  * @copyright 2018 Daniel Neubert
  * --------------------------------------------------------------------------------
- * @version   1.0.8
+ * @version   1.0.10
  * --------------------------------------------------------------------------------
  */
 
@@ -457,7 +457,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       if ($('label', _.parent).length == i + 1) {
 
-        if (_.callEvent('validation-after', [_.parent]) === false) {
+        if (_.callEvent('validation-after', [_.parent, errorFound]) === false) {
           errorFound = false;
         }
 
