@@ -12,7 +12,7 @@
  * @author    Daniel Neubert <git@danielneubert.com>
  * @copyright 2018 Daniel Neubert
  * --------------------------------------------------------------------------------
- * @version   1.0.5
+ * @version   1.0.7
  * --------------------------------------------------------------------------------
  */
 
@@ -281,6 +281,7 @@
       this.callEvent('initialize', [this.parent]);
 
       // log success
+      this.out('You are running Reform.js in development mode. We recomend to set \'debugMode\' to \'false\' when you use this script in production.');
       this.out('Successfully initialized Reform for ' + parentToString);
 
     }
@@ -323,6 +324,7 @@
                 _.out('Group has selected child. (true)');
                 if ($('.rf-group', _.parent).length == groupCounter) {
                   _.validateSingle(errorFound);
+                  return true;
                 } else {
                   return true;
                 }
@@ -334,11 +336,11 @@
                       _.outputError(this);
                     });
                     _.out('Group has no selected child. (false)');
-                  }
-                  if ($('.rf-group', _.parent).length == groupCounter) {
-                    _.validateSingle(errorFound);
-                  } else {
-                    return true;
+                    if ($('.rf-group', _.parent).length == groupCounter) {
+                      _.validateSingle(errorFound);
+                    } else {
+                      return true;
+                    }
                   }
                 }
               }
