@@ -1,6 +1,6 @@
 {
   "name": "reform.js",
-  "version": "1.0.7-b",
+  "version": "1.0.7-c",
   "description": "Modern forms finally made easy.",
   "main": "dist/reform.min.js",
   "repository": {
